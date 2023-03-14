@@ -26,7 +26,14 @@ export default function Home() {
             click here to verify your account.
           </button>
         </p>
-      ) : null}
+      ) : <div>Home</div>
+     
+  
+  
+ 
+
+
+}
     </Container>
   );
 }

@@ -45,15 +45,15 @@ export default function Signin() {
     handleLogin(userInfo.email, userInfo.password);
   };
 
-  useEffect(() => {
-    // we want to move our user to somewhere else
-    if (isLoggedIn) navigate("/");
-  }, [isLoggedIn]);
+  // useEffect(() => {
+  //   // we want to move our user to somewhere else
+  //   if (isLoggedIn) navigate("/");
+  // }, [isLoggedIn]);
 
   return (
     <FormContainer>
-      <Container>
-        <form onSubmit={handleSubmit} className={commonModalClasses + " w-72"}>
+     
+        <form onSubmit={handleSubmit} className="box-border  w-2xl p-20 rounded bg-secondary space-y-6">
           <Title>Sign in</Title>
           <FormInput
             value={userInfo.email}
@@ -77,7 +77,7 @@ export default function Signin() {
             <CustomLink to="/auth/signup">Sign up</CustomLink>
           </div>
         </form>
-      </Container>
+      
     </FormContainer>
   );
 }
